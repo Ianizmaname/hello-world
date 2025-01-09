@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <title>HTML HOMEWORK 1</title>
+    <head>
+        <style>
+
+            body{
+                background-color: beige;
+            }
+            .container{
+                display: flex;
+                flex-direction: row;
+                justify content:center;
+                gap:20px;
+
+            }
+            .item{
+                background-color:azure;
+                width: 200px;
+                border-radius: 10px;
+                padding: 20px;
+                margin:20px 0px;
+                font-weight:800;
+                text-align: center;
+
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+             .stat{
+font-size: 24px;
+color: #000;
+             }
+             .value{
+                font-size: 24px;
+                color:#000;
+             }
+
+             .table-container{
+                background-color: #fff;
+                border-radius:10px;
+                height:500px;
+                margin:20px;
+                padding:20px;
+            }   
+            .table-wrapper{
+                border: 1px solid #d1d1d1;
+                border-radius: 8px;
+                padding:20px;
+                margin:20px;
+            }
+            .table-btns{
+                display: flex;
+                flex-direction: row;
+                gap:20px;
+                justify-content: flex-end;
+            }
+            .button{
+                border: none;
+                background-color:crimson;
+                color: white;
+                padding:10px;
+                border-radius:4px;
+                font-size:16px;
+                font-weight: 500;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="item">
+                <span class="stat">Product</span>
+                <span class="value">300</span>
+            </div>
+            <div class="item">
+                <span class="stat">Sales</span>
+                <span class="value">Ksh. 300,000</span>
+           </div>
+           <div class="item">
+            <span class="stat">Customers</span>
+            <span class="value">600</span>
+           </div>
+           <div class="item">
+            <span class="stat">Agents</span>
+            <span class="value">20</span>
+           </div>
+        </div>
+
+        <div class="table-container">
+        <div class="table-wrapper">
+        <div class="table-btns">
+        <button>Add product</button>
+        <button>Delete-products</button>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
