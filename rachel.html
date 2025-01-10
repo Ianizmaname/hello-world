@@ -1,99 +1,188 @@
 <!DOCTYPE html>
 <html>
-    <title>HTML CSS COURSE</title>
-    <head>
-        <style>
+  <title>HTML CSS COURSE</title>
+  <head>
+    <style>
+      body {
+        background-color: #d2d2d2;
+      }
+      .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+      }
+      .item {
+        background-color: #fff;
+        width: 200px;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px 0px;
+        font-weight: 800;
+        text-align: center;
 
-            body{
-                background-color: #d2d2d2;
-            }
-            .container{
-                display: flex;
-                flex-direction: row;
-                justify-content:center;
-                gap:20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      .stat {
+        font-size: 24px;
+        color: #000;
+      }
+      .value {
+        font-size: 32px;
+        color: #000;
+      }
+
+      .table-container {
+        background-color: #fff;
+        border-radius: 10px;
+        height: 500px;
+        margin: 20px;
+        padding: 20px;
+      }
+      .table-wrapper {
+        border: 1px solid #d1d1d1;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px;
+      }
+      .table-btns {
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: flex-end;
+        margin-bottom: 20px;
+      }
+      .primary-btn {
+        border: none;
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      .outline-btn{
+        border: 1px solid blue;
+        background-color: white;
+        color: blue;
+        padding: 10px;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+table{
+  font-size: 16px;
+  width: 100%;
+}
+      table,td, th{
+        border: 1px solid #d1d1d1;
+        border-collapse: collapse;
+      }
+      td,th{
+        padding:10px 20px;
+      }
+      th{
+        text-align: left;
+        color:grey;
+      }
+      .active-btn{
+        border-radius: 20px;
+        padding:3px 10px;
+        width:100px;
+        background-color: rgba(129,223,144, 0.5);
+        color:rgb(9, 152, 32);
+        font-weight: 500;
+      }
+      .out-of-stock-btn{
+        border-radius: 20px;
+        padding:3px 10px;
+        width:100px;
+        background-color: rgba(206,77,50, 0.5);
+        color:rgb(206,77,50);
+        font-weight: 500;
+      }
+     table img{
+        height:30px;
+        width:30px;
+        margin-right: 5px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">
+        <span class="stat">Products</span>
+        <span class="value">200</span>
+      </div>
+      <div class="item">
+        <span class="stat">Sales</span>
+        <span class="value">Ksh. 200,000</span>
+      </div>
+      <div class="item">
+        <span class="stat">Customers</span>
+        <span class="value">500</span>
+      </div>
+      <div class="item">
+        <span class="stat">Agents</span>
+        <span class="value">20</span>
+      </div>
+    </div>
+
+    <div class="table-container">
+      <div class="table-wrapper">
+        <div class="table-btns">
+          <button class="outline-btn">Export</button>
+          <button class="primary-btn">Add Product</button>
+    
+        </div>
+
+        <!-- Start table -->
+        <table>
+        
          
-            }
-            .item{
-                background-color: #fff;
-                width:200px;
-                border-radius: 10px;
-                padding:20px;
-                margin:20px 0px;
-                font-weight: 800;
-                text-align: center;
-
-                display: flex;
-                flex-direction: column;
-                gap:10px;
-            }
-          .stat{
-font-size: 24px;
-color:#000;
-          }
-          .value{
-            font-size: 32px;
-            color: #000;
-          }
-
-          .table-container{
-            background-color: #fff;
-            border-radius: 10px;
-            height:500px;
-            margin:20px;
-            padding: 20px;
-          }
-          .table-wrapper{
-            border: 1px solid #d1d1d1;
-            border-radius: 8px;
-            padding:20px;
-            margin:20px;
-          }
-          .table-btns{
-            display: flex;
-            flex-direction: row;
-            gap:20px;
-            justify-content: flex-end;
-          }
-          button{
-            border:none;
-            background-color: red;
-            color:white;
-            padding:10px;
-            border-radius: 4px;
-            font-size: 16px;
-            font-weight: 500;
-          }
-        </style>
-    </head>
-    <body>
        
-        <div class="container">
-            <div class="item">
-                <span class="stat">Products</span>
-                <span class="value">200</span>
-            </div>
-            <div class="item">
-                <span class="stat">Sales</span>
-                <span class="value">Ksh. 200,000</span>
-            </div>
-            <div class="item">
-                <span class="stat">Customers</span>
-                <span class="value">500</span>
-            </div>
-            <div class="item">
-                <span class="stat">Agents</span>
-                <span class="value">20</span>
-            </div>
-        </div>
+          <thead>
+          <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Qty</th>
+            <th>Price (Ksh.)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
 
-        <div class="table-container">
-<div class="table-wrapper">
-<div class="table-btns">
-<button>Add Product</button>
-<button>Delete Products</button>
-</div>
-</div>
-        </div>
-    </body>
+        <tbody>
+          <tr>
+            <td>
+              <img src="./table.jpg"/>
+              Study Table
+            </td>
+            <td>Furniture</td>
+            <td>10</td>
+            <td>15,000</td>
+            <td><span class="active-btn">Active</span></td>
+          </tr>
+          <tr>
+            <td>    <img src="./table.jpg"/> Persian Carpet</td>
+            <td>Furniture</td>
+            <td>2</td>
+            <td>10,000</td>
+            <td><span class="out-of-stock-btn">Out of Stock</span></td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+          <tr>
+            <td colspan="4">Total</td>
+            <td>25,000</td>
+          </tr>
+        </tfoot>
+        </table>
+        <!-- End table -->
+      </div>
+    </div>
+  </body>
 </html>
