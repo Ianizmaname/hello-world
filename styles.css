@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Raleway", sans-serif;
+    color: #333;
+}
+.navbar{
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px; 
+    display: flex; 
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.company-name{
+color: blue;
+font-weight: 500;
+font-size: 30px;
+}
+.user-name{
+height: 60px;
+width: 60px;
+background-color: blue;
+color: white;
+font-weight: 500;
+font-size: 30px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+
+}
+body{
+    background-color: beige;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    gap:20px;
+
+}
+.item{
+    background-color:azure;
+    width: 200px;
+    border-radius: 10px;
+    padding: 20px;
+    margin:20px 0px;
+    font-weight:800;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ .stat{
+font-size: 24px;
+color: #000;
+ }
+ .value{
+    font-size: 24px;
+    color:#000;
+ }
+
+ .table-container{
+    background-color: #fff;
+    border-radius:10px;
+    height:500px;
+    margin:20px;
+    padding:20px;
+}   
+.table-wrapper{
+    border: 1px solid #d1d1d1;
+    border-radius: 8px;
+    padding:20px;
+    margin:20px;
+}
+.table-btns{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+    justify-content: flex-end;
+}
+.primary-btn{
+    border: none;
+    background-color:blue;
+    color: white;
+    padding:10px;
+    border-radius:4px;
+    font-size:16px;
+    font-weight: 500;
+}
+.outline-btn{
+    border: 1px solid blue;
+    background-color:white;
+    color: blue;
+    padding:10px;
+    border-radius:4px;
+    font-size:16px;
+    font-weight: 500;
+}
+table,th,td{
+border:1px solid #d1d1d1;
+border-collapse: collapse;
+
+}
+table{
+width: 100%;
+margin-top: 20px;
+}
+th,td{
+padding: 20px;
+text-align: left;
+}
+.available-badge{
+background-color: rgba(0, 128, 0, 0.2);
+color: green;
+padding:3px 10px;
+font-weight:500;
+border-radius: 20px;
+width: 100px;
+}
+.out-of-stock-badge{
+background-color: rgba(255, 0, 0, 0.2);
+color: red;
+padding:3px 10px;
+font-weight:500;
+border-radius: 20px;
+width: 100px;
+}
+.sidebar{
+    background-color: white;
+    width: 200px;
+
+}
+.big-container{
+    display: flex;
+    flex-direction: row;
+   
+
+}

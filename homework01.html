@@ -1,132 +1,91 @@
 <!DOCTYPE html>
 <html>
+  <head>
     <title>HTML HOMEWORK 1</title>
-    <head>
-        <style>
-            .navbar{
-                background-color: white;
-                padding: 20px;
-                margin-bottom: 20px; 
-                display: flex; 
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-            }
-.company-name{
-    color: blue;
-    font-weight: 500;
-    font-size: 30px;
-}
-.user-name{
-height: 60px;
-width: 60px;
-background-color: blue;
-color: white;
-font-weight: 500;
-font-size: 30px;
-border-radius: 50%;
-display: flex;
-align-items: center;
-justify-content: center;
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- start navbar -->
+    <div class="navbar">
+      <div class="company-name">Ian and sons</div>
+      <div class="user-name">JN</div>
+    </div>
+    <!-- end navbar -->
+    <div class="big-container">
+      <!-- start sidebar -->
+      <div class="sidebar">
 
-}
-            body{
-                background-color: beige;
-            }
-            .container{
-                display: flex;
-                flex-direction: row;
-                justify-content:center;
-                gap:20px;
-
-            }
-            .item{
-                background-color:azure;
-                width: 200px;
-                border-radius: 10px;
-                padding: 20px;
-                margin:20px 0px;
-                font-weight:800;
-                text-align: center;
-
-                display: flex;
-                flex-direction: column;
-                gap: 10px;
-            }
-             .stat{
-font-size: 24px;
-color: #000;
-             }
-             .value{
-                font-size: 24px;
-                color:#000;
-             }
-
-             .table-container{
-                background-color: #fff;
-                border-radius:10px;
-                height:500px;
-                margin:20px;
-                padding:20px;
-            }   
-            .table-wrapper{
-                border: 1px solid #d1d1d1;
-                border-radius: 8px;
-                padding:20px;
-                margin:20px;
-            }
-            .table-btns{
-                display: flex;
-                flex-direction: row;
-                gap:20px;
-                justify-content: flex-end;
-            }
-            button{
-                border: none;
-                background-color:crimson;
-                color: white;
-                padding:10px;
-                border-radius:4px;
-                font-size:16px;
-                font-weight: 500;
-            }
-
-        </style>
-    </head>
-    <body>
-         <!-- start navbar -->
-     <div class="navbar">
-        <div class="company-name">Ian and sons</div>
-        <div class="user-name">JN</div>
-             </div>
-             <!-- end navbar --> 
-
+        <ul>
+            <li>Products</li>
+        </ul>
+      </div>
+      <!-- end sidebar -->
+      <div>
         <div class="container">
-            <div class="item">
-                <span class="stat">Product</span>
-                <span class="value">300</span>
-            </div>
-            <div class="item">
-                <span class="stat">Sales</span>
-                <span class="value">Ksh. 300,000</span>
-           </div>
-           <div class="item">
+          <div class="item">
+            <span class="stat">Product</span>
+            <span class="value">300</span>
+          </div>
+          <div class="item">
+            <span class="stat">Sales</span>
+            <span class="value">Ksh. 300,000</span>
+          </div>
+          <div class="item">
             <span class="stat">Customers</span>
             <span class="value">600</span>
-           </div>
-           <div class="item">
+          </div>
+          <div class="item">
             <span class="stat">Agents</span>
             <span class="value">20</span>
-           </div>
+          </div>
         </div>
 
         <div class="table-container">
-        <div class="table-wrapper">
-        <div class="table-btns">
-        <button>Add product</button>
-        <button>Delete-products</button>
+          <div class="table-wrapper">
+            <div class="table-btns">
+              <button class="outline-btn">Export product</button>
+              <button class="primary-btn">Add products</button>
             </div>
-            </div>
+            <!-- start table -->
+            <table>
+              <tr>
+                <th>Item</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Status</th>
+              </tr>
+              <tr>
+                <td>Chairs</td>
+                <td>Furnitures</td>
+                <td>2,500</td>
+                <td>5</td>
+                <td>
+                  <span class="available-badge">Available</span>
+                </td>
+              </tr>
+              <tr>
+                <td>Beds</td>
+                <td>Furnitures</td>
+                <td>40,000</td>
+                <td>2</td>
+                <td>
+                  <span class="out-of-stock-badge">Out of stock</span>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <strong>Totals</strong>
+                </td>
+                <td colspan="3">
+                  <b>120,000</b>
+                </td>
+              </tr>
+            </table>
+            <!-- end table -->
+          </div>
         </div>
-    </body>
+      </div>
+    </div>
+  </body>
 </html>
